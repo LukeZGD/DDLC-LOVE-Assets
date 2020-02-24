@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-echo "DDLC-LOVE-Assets config"
+echo "DDLC-LOVE-Assets Config"
 echo "Select system to be used"
 select opt in "3DS (old-png)" "3DS (new-t3x)" "Switch" "PS Vita" "PSP" "PS3"; do
   case $opt in
