@@ -1,11 +1,11 @@
 # DDLC-LOVE-Assets
 ### Game assets for [DDLC-LOVE](https://github.com/LukeZGD/DDLC-LOVE)
 
-- To prepare for assets in DDLC-LOVE with the common folder, run `config.sh` or `config.bat`, then select the system to be used. 
-- The processed assets will be in the output folder
+- To prepare the assets for DDLC-LOVE, run `config.sh` or `config.bat`, then select the system to be used. 
+- The processed assets folder will be created to be put in the game folder of DDLC-LOVE
 
 ### Systems:
-- 3DS (old-png or new-t3x)
+- 3DS
 - Switch
 - PS Vita
 - PSP
