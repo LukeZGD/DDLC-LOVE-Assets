@@ -2,17 +2,21 @@
 
 clear
 echo "DDLC-LOVE-Assets Config"
-echo "Select system to be used"
-select opt in "3DS" "Switch" "PS Vita" "PSP" "PS3"; do
-  case $opt in
-    "3DS" ) system=3ds; break;;
-    "Switch" ) system=switch; break;;
-    "PS Vita" ) system=psvita; break;;
-    "PSP" ) system=psp; break;;
-    "PS3" ) system=ps3; break;;
-    * ) exit;;
-  esac
-done
+if [ ! -z $1 ]; then
+    system=$1
+else
+    echo "Select system to be used"
+    select opt in "3DS" "Switch" "PS Vita" "PSP" "PS3"; do
+    case $opt in
+        "3DS" ) system=3ds; break;;
+        "Switch" ) system=switch; break;;
+        "PS Vita" ) system=psvita; break;;
+        "PSP" ) system=psp; break;;
+        "PS3" ) system=ps3; break;;
+        * ) exit;;
+    esac
+    done
+fi
 
 rm -rf assets
 mkdir -p assets

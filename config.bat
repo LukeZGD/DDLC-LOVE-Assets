@@ -1,5 +1,6 @@
 @echo off
 
+if not %1=="" goto go
 :main
 cls
 echo DDLC-LOVE-Assets Config
@@ -17,6 +18,7 @@ if %opt%==4 set system=psp
 if %opt%==5 set system=ps3
 if %opt%=="" goto main
 
+:go
 rd assets /s/q
 md assets
 
