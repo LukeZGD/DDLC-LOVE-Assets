@@ -21,6 +21,7 @@ fi
 rm -rf assets
 mkdir -p assets
 
+echo "System: $system"
 echo "Copying files..."
 if [[ $system == 3ds ]]; then
   cp -r 3ds/common/audio assets

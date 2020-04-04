@@ -22,6 +22,7 @@ if %opt%=="" goto main
 rd assets /s/q
 md assets
 
+echo System: %system%
 echo Copying files...
 if %system%==3ds (
   xcopy 3ds\common\audio assets\audio /e/i/q/y
