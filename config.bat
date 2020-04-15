@@ -1,6 +1,9 @@
 @echo off
 
-if not %1=="" goto go
+if not %1=="" (
+  set system=%1
+  goto go
+)
 :main
 cls
 echo DDLC-LOVE-Assets Config
